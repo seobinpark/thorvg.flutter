@@ -7,7 +7,7 @@
 # ThorVG for Flutter
 
 <p align="center">
-  <img width="800" height="auto" src="https://github.com/thorvg/thorvg.site/blob/main/readme/logo/512/thorvg-banner.png">
+  <img width="550" height="auto" src="https://github.com/thorvg/thorvg.site/blob/main/readme/logo/animated_brand.svg">
 </p>
 
 This project provides the [ThorVG](https://github.com/thorvg/thorvg) runtime for Flutter, including efficient Lottie animation support via a native API.
