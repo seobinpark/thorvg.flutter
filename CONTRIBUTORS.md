@@ -6,3 +6,4 @@
 
 ## Contributor
 - TaeHyung Kwon @TaeBbong
+- Seobin Park @seobinpark

@@ -10,9 +10,7 @@
   <img width="550" height="auto" src="https://github.com/thorvg/thorvg.site/blob/main/readme/logo/animated_brand.svg">
 </p>
 
-This project provides the [ThorVG](https://github.com/thorvg/thorvg) runtime for Flutter, including efficient Lottie animation support via a native API.
-
-> Currently, we only support Lottie Animation feature in this package.
+This project provides the [ThorVG](https://github.com/thorvg/thorvg) runtime for Flutter, including efficient Lottie animation and SVG rendering support.
 
 ## Supported Platforms
 
@@ -56,8 +54,8 @@ class MyApp extends StatelessWidget {
 ## Generate Flutter binding
 
 If you change the binding interface in these files
-- `tvgFlutterLottieAnimation.h`
-- `tvgFlutterLottieAnimation.cpp`
+- `tvgFlutterView.h`
+- `tvgFlutterView.cpp`
 
 You must always run the following script:
 
@@ -94,8 +92,8 @@ git submodule update --remote
 Android build requires NDK([LTS](https://developer.android.com/ndk/downloads#lts-downloads)), please specify following build [systems info](https://developer.android.com/ndk/guides/other_build_systems?_gl=1*19sk6gt*_up*MQ..*_ga*MTYxMjIxMTcwMi4xNzE0MTE5NTk1*_ga_6HH9YJMN9M*MTcxNDExOTU5NS4xLjAuMTcxNDExOTU5NS4wLjAuMA..#overview).
 
 ```sh
-# Build for Animation(Lottie)
-cd lottie
+# Build ThorVG native libraries
+cd tool
 sh flutter_build.android.sh $NDK $HOST_TAG $API
 ```
 
@@ -106,8 +104,8 @@ Check whether these files are generated:
 
 ### iOS
 ```sh
-# Build for Animation(Lottie)
-cd lottie
+# Build ThorVG native libraries
+cd tool
 sh flutter_build.ios.sh
 ```
 
